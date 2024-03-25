@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: design-patterns
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: yuridefranca/design-patterns:latest
+    volumes:
+      - .:/root/app
